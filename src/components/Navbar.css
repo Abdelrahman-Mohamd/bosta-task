@@ -66,6 +66,7 @@ nav {
   margin-left: 16vw;
   height: 9vw;
   border-radius: 5px;
+  position: absolute;
 }
 .search-container {
   display: flex;
