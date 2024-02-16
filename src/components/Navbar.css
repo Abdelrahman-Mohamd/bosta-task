@@ -15,7 +15,9 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
+.overflow-hidden {
+  overflow: hidden;
+}
 .nav-lang-selection {
   color: #e30613;
 }

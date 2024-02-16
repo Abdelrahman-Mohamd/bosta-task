@@ -29,6 +29,7 @@ const Navabr = () => {
   const toggleSearchCard = () => {
     setIsSearchCardVisible(!isSearchCardVisible);
     setIsHamburgerNavbarVisible(false);
+    document.body.classList.remove("overflow-hidden");
   };
 
   const handleSearchButtonClick = () => {
@@ -39,6 +40,11 @@ const Navabr = () => {
   const toggleHamburgerNavbar = () => {
     setIsHamburgerNavbarVisible(!isHamburgerNavbarVisible);
     setIsSearchCardVisible(false);
+    if (isHamburgerNavbarVisible) {
+      document.body.classList.remove("overflow-hidden");
+    } else {
+      document.body.classList.add("overflow-hidden");
+    }
   };
   return (
     <>

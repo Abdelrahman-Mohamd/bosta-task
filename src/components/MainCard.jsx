@@ -137,12 +137,12 @@ const MainCard = () => {
               {data.CurrentStatus?.state && (
                 <>
                   {data.CurrentStatus.state === "CANCELLED" && (
-                    <h5 className="text-[#ff0000] text-[0.7vw]">
+                    <h5 className="text-[#ff0000] text-[0.7rem]">
                       تم الغاء الشحنة من التاجر
                     </h5>
                   )}
                   {data.CurrentStatus.state === "DELIVERED_TO_SENDER" && (
-                    <h5 className="text-yellow-400 text-[0.7vw]">
+                    <h5 className="text-yellow-400 text-[0.7rem]">
                       العميل غير متواجد في العنوان
                     </h5>
                   )}
