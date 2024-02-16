@@ -99,24 +99,24 @@ const MainCard = () => {
           >
             {data.CurrentStatus?.state === "DELIVERED" ? (
               <div className="path-icons">
-                <FaCheck className="path-icon text-[1.5vw] text-white bg-[#00ba00]" />
-                <FaCheck className="path-icon text-[1.5vw] text-white bg-[#00ba00]" />
-                <FaCheck className="path-icon text-[1.5vw] text-white bg-[#00ba00]" />
-                <FaCheck className="path-icon text-[1.5vw] text-white bg-[#00ba00]" />
+                <FaCheck className="path-icon text-[1.5rem] text-white bg-[#204720]" />
+                <FaCheck className="path-icon text-[1.5rem] text-white bg-[#00ba00]" />
+                <FaCheck className="path-icon text-[1.5rem] text-white bg-[#00ba00]" />
+                <FaCheck className="path-icon text-[1.5rem] text-white bg-[#00ba00]" />
               </div>
             ) : data.CurrentStatus?.state === "DELIVERED_TO_SENDER" ? (
               <div className="path-icons">
                 <RiFolderReceivedFill className="path-icon text-[2.5vw] text-[#e9e9e9]" />
                 <TbTruckDelivery className="path-icon text-[2.5vw] bg-yellow-400 text-[white]" />
-                <FaCheck className="path-icon text-[1.5vw] text-[white] bg-yellow-400" />
-                <FaCheck className="path-icon text-[1.5vw] text-[white] bg-yellow-400" />
+                <FaCheck className="path-icon text-[1.5rem] text-[white] bg-yellow-400" />
+                <FaCheck className="path-icon text-[1.5rem] text-[white] bg-yellow-400" />
               </div>
             ) : data.CurrentStatus?.state === "CANCELLED" ? (
               <div className="path-icons">
                 <RiFolderReceivedFill className="path-icon text-[2.5vw] text-[#e9e9e9]" />
                 <TbTruckDelivery className="path-icon text-[2.5vw] text-[white] bg-[#ff0000]" />
-                <FaCheck className="path-icon text-[1.5vw] text-[white] bg-[#ff0000]" />
-                <FaCheck className="path-icon text-[1.5vw] text-[white] bg-[#ff0000]" />
+                <FaCheck className="path-icon text-[1.5rem] text-[white] bg-[#ff0000]" />
+                <FaCheck className="path-icon text-[1.5rem] text-[white] bg-[#ff0000]" />
               </div>
             ) : (
               <div className="path-icons">

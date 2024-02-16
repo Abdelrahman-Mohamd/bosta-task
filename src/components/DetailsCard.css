@@ -54,11 +54,11 @@
   align-items: flex-end;
   gap: 1rem;
   margin-left: 4vw;
+  width: 40%;
 }
 .address {
   background-color: #69696912;
   border-radius: 5px;
-  /* width: 90%; */
   padding: 1rem 1rem 1rem 2.5rem;
 }
 .extra-details h1 {
@@ -67,7 +67,7 @@
 }
 .address p {
   text-align: right;
-  font-size: 0.9vw;
+  font-size: 0.9rem;
 }
 .left-section {
   display: flex;
@@ -79,7 +79,7 @@
   border-radius: 7px;
   background-color: #f30514;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.2rem 2rem 0.2rem 2rem;
   font-weight: 600;
   transition: background-color 0.3s ease-in;
@@ -88,8 +88,9 @@
   background-color: #b5010d;
 }
 .left-section h1 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 650;
+  text-align: right;
 }
 .complain-card {
   display: flex;
@@ -99,4 +100,46 @@
   border-radius: 5px;
   width: 100%;
   border: 1px solid rgba(156, 156, 156, 0.304);
+  margin-bottom: 5rem;
+  padding: 1rem;
+  gap: 3vw;
+}
+
+/* small screens */
+@media only screen and (max-width: 768px) {
+  .details-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cell {
+    font-size: 0.7rem;
+  }
+  .table {
+    width: 95%;
+  }
+  .cell:first-child {
+    width: 30%;
+  }
+  .cell:last-child {
+    width: 20%;
+  }
+  .extra-details {
+    gap: 1rem;
+    margin-right: 10vw;
+    width: 100%;
+  }
+  .address {
+    padding: 1rem 1rem 1rem 2.5rem;
+    width: 100%;
+  }
+  .address p {
+    text-align: right;
+    font-size: 1.1rem;
+  }
+  .left-section button {
+    font-size: 1rem;
+  }
+  .left-section h1 {
+    font-size: 1rem;
+  }
 }

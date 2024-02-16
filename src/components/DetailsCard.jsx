@@ -64,12 +64,12 @@ const DetailsCard = () => {
                 <div className="cell">
                   {formatState(event.state)}{" "}
                   {event.state === "CANCELLED" && (
-                    <h5 className="text-[#ff0000] text-[0.7vw]">
+                    <h5 className="text-[#ff0000] text-[0.7rem]">
                       تم الغاء الشحنة من التاجر
                     </h5>
                   )}
                   {event.state === "DELIVERED_TO_SENDER" && (
-                    <h5 className="text-yellow-400 text-[0.7vw]">
+                    <h5 className="text-yellow-400 text-[0.7rem]">
                       العميل غير متواجد في العنوان
                     </h5>
                   )}
@@ -96,7 +96,11 @@ const DetailsCard = () => {
               <button>ابلاغ عن مشكلة</button>
             </div>
             <div className="right-section">
-              <img src={questionLogo} alt="question mark" className="w-[5vw]" />
+              <img
+                src={questionLogo}
+                alt="question mark"
+                className="w-[7rem]"
+              />
             </div>
           </div>
         </div>
