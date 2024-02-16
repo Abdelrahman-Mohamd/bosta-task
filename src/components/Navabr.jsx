@@ -5,9 +5,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { useState } from "react";
 
+import { useDispatch } from "react-redux";
+import { fetchPackageDetails } from "../rtk/slices/package-slice";
+
 const Navabr = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [isSearchCardVisible, setIsSearchCardVisible] = useState(false);
+  const [trackingNumber, setTrackingNumber] = useState("");
+  const dispatch = useDispatch();
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -23,9 +28,8 @@ const Navabr = () => {
 
   const handleSearchButtonClick = () => {
     setIsSearchCardVisible(false);
-    // Handle search logic here
+    dispatch(fetchPackageDetails(trackingNumber));
   };
-
   return (
     <>
       <nav>
@@ -68,6 +72,9 @@ const Navabr = () => {
                 type="text"
                 className="search-input"
                 placeholder="رقم التتبع"
+                onChange={(e) => {
+                  setTrackingNumber(e.target.value);
+                }}
               />
             </div>
           </div>
