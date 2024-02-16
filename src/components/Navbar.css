@@ -67,6 +67,7 @@ nav {
   height: 9vw;
   border-radius: 5px;
   position: absolute;
+  z-index: 2;
 }
 .search-container {
   display: flex;
@@ -91,8 +92,62 @@ nav {
 .search-input {
   outline: none;
   text-align: end;
-  padding-right: 1rem;
+  padding-right: 1vw;
   font-weight: 300;
   font-size: 1vw;
   width: 13vw;
+}
+.search-container h1 {
+  font-size: 1vw;
+}
+
+/* small screens */
+@media only screen and (max-width: 768px) {
+  .search-card {
+    width: 60vw;
+    margin-left: 16vw;
+    height: 30vw;
+  }
+  .search-container h1 {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 50vw;
+  }
+  .search-input {
+    padding-right: 1vw;
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .hamburger-navbar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    background-color: white;
+    padding-right: 3.3rem;
+    height: 87.5vh;
+    max-height: 87.5vh;
+    overflow: hidden;
+    /* position: fixed; */
+  }
+  .middle-nav-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* justify-content: space-around; */
+  }
+  .middle-nav-section a {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+    width: 20rem;
+    text-align: right;
+  }
 }

@@ -64,7 +64,6 @@
   width: 100%;
   font-size: 0.8rem;
   font-weight: 650;
-  /* position: relative; */
 }
 .path-details div {
   display: flex;
@@ -72,7 +71,6 @@
   align-items: center;
 }
 .path-icon {
-  /* position: absolute; */
   bottom: 2.5vw;
   background-color: white;
   border: 2px solid #e9e9e9;
@@ -124,7 +122,6 @@
     height: 100%;
   }
   .path-icon {
-    /* position: absolute; */
     bottom: 2.5vw;
     background-color: white;
     border: 2px solid #e9e9e9;
